@@ -15,12 +15,6 @@ Organizado através do bloco "Call" e funções isoladas para manter o código l
 - Faça o Download do Arquivo '.fprg' presente neste repositório.
 - Abra o Arquivo no Flowgorithm e execute clicando no Botão 'Play' ( Ou pressione 'F5' ).
 
-- ### Funções Obrigatórias:
-1. **Cálculo de IMC (Índice de Massa Corporal)** – Avalia o IMC com base no peso e na altura informados.
-2. **Cálculo de Área do Retângulo** – Calcula a área de um retângulo 
-3. **Cálculo de Área do Círculo** – Calcula a área de um círculo com base no raio 
-4. **Cálculo de Área do Triângulo** – Calcula a área de um triângulo 
-
 ## Operações Aritméticas e Matemáticas:
 
 5. **Soma** – Adição de dois números.
