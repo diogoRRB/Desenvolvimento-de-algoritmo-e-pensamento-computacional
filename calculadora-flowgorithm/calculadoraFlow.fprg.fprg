@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prototipo"/>
+        <attribute name="authors" value="Diogo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-28 12:30:43 "/>
+        <attribute name="created" value="RGlvZ287QlJBVU5BOzIwMjYtMDgtMjY7IjA2OjIxOjE2ICI7MjEzNg=="/>
+        <attribute name="edited" value="RGlvZ287QlJBVU5BOzIwMjYtMDgtMjg7IjEyOjMwOjQzICI7NTsyMjQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <assign variable="opcao" expression="-1"/>
+            <while expression="opcao != 0">
+                <output expression="&quot;1- Soma |2- subtra&#231;&#227;o |3- divis&#227;o |4- multiplica&#231;&#227;o |5- Potencia&#231;&#227;o |6- Raiz Quadrada | 7- Porcentagem | 8- M&#233;dia Aritm&#233;tica | 9- &#193;rea Do Ret&#226;ngulo |10- &#193;rea Do Tri&#226;ngulo |11- &#225;rea Do C&#237;rculo | 12- Perimetro Do Ret&#226;ngulo |13- Comprimento Da Circunfer&#234;ncia | 14-Celsius Para Fahrenheit | 15-Fahrenheit Para Celsius | 16- Quil&#244;metros Para Milhas 17- Dias Para Horas | 18-IMC  19-Valor De Desconto | 20- Teorema De Pitagoras&quot;" newline="True"/>
+                <input variable="opcao"/>
+                <if expression="opcao==1">
+                    <then>
+                        <call expression="somar"/>
+                    </then>
+                    <else>
+                        <if expression="opcao==2">
+                            <then>
+                                <call expression="subtrair"/>
+                            </then>
+                            <else>
+                                <if expression="opcao==3">
+                                    <then>
+                                        <call expression="dividir"/>
+                                    </then>
+                                    <else>
+                                        <if expression="opcao==4">
+                                            <then>
+                                                <call expression="multiplicar"/>
+                                            </then>
+                                            <else>
+                                                <if expression="opcao==5">
+                                                    <then>
+                                                        <call expression="potenciacao"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="opcao==6">
+                                                            <then>
+                                                                <call expression="raiz "/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="opcao==7">
+                                                                    <then>
+                                                                        <call expression="porcentagem"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="opcao==8">
+                                                                            <then>
+                                                                                <call expression="mediaAritmetica"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="opcao==9">
+                                                                                    <then>
+                                                                                        <call expression="arearetangulo"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="opcao==10">
+                                                                                            <then>
+                                                                                                <call expression="areatriangulo"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="opcao==11">
+                                                                                                    <then>
+                                                                                                        <call expression="areacirculo"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <if expression="opcao==12">
+                                                                                                            <then>
+                                                                                                                <call expression="perimetroretangulo"/>
+                                                                                                            </then>
+                                                                                                            <else>
+                                                                                                                <if expression="opcao==13">
+                                                                                                                    <then>
+                                                                                                                        <call expression="comprimentocircunferencia"/>
+                                                                                                                    </then>
+                                                                                                                    <else>
+                                                                                                                        <if expression="opcao==14">
+                                                                                                                            <then>
+                                                                                                                                <call expression="cparaf"/>
+                                                                                                                            </then>
+                                                                                                                            <else>
+                                                                                                                                <if expression="opcao==15">
+                                                                                                                                    <then>
+                                                                                                                                        <call expression="fparac"/>
+                                                                                                                                    </then>
+                                                                                                                                    <else>
+                                                                                                                                        <if expression="opcao==16">
+                                                                                                                                            <then>
+                                                                                                                                                <call expression="kmparam"/>
+                                                                                                                                            </then>
+                                                                                                                                            <else>
+                                                                                                                                                <if expression="opcao==17">
+                                                                                                                                                    <then>
+                                                                                                                                                        <call expression="diasparahoras"/>
+                                                                                                                                                    </then>
+                                                                                                                                                    <else>
+                                                                                                                                                        <if expression="opcao==18">
+                                                                                                                                                            <then>
+                                                                                                                                                                <call expression="imc"/>
+                                                                                                                                                            </then>
+                                                                                                                                                            <else>
+                                                                                                                                                                <if expression="opcao==19">
+                                                                                                                                                                    <then>
+                                                                                                                                                                        <call expression="valordesconto"/>
+                                                                                                                                                                    </then>
+                                                                                                                                                                    <else>
+                                                                                                                                                                        <if expression="opcao==20">
+                                                                                                                                                                            <then>
+                                                                                                                                                                                <call expression="pitagoras"/>
+                                                                                                                                                                            </then>
+                                                                                                                                                                            <else/>
+                                                                                                                                                                        </if>
+                                                                                                                                                                    </else>
+                                                                                                                                                                </if>
+                                                                                                                                                            </else>
+                                                                                                                                                        </if>
+                                                                                                                                                    </else>
+                                                                                                                                                </if>
+                                                                                                                                            </else>
+                                                                                                                                        </if>
+                                                                                                                                    </else>
+                                                                                                                                </if>
+                                                                                                                            </else>
+                                                                                                                        </if>
+                                                                                                                    </else>
+                                                                                                                </if>
+                                                                                                            </else>
+                                                                                                        </if>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="areacirculo" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Raio )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="PI * (num1 ^ 2)"/>
+            <output expression="&quot;A &#193;rea Do Circulo &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="arearetangulo" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( base )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( altura )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 * num2"/>
+            <output expression="&quot;A &#193;rea Do Ret&#226;ngulo &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="areatriangulo" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( base )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( altura )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="(num1 * num2)/ 2"/>
+            <output expression="&quot;A &#193;rea Do Tri&#226;ngulo &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="comprimentocircunferencia" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( raio )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="2 * PI * num1"/>
+            <output expression="&quot;A &#193;rea Do Ret&#226;ngulo &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="cparaf" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Temperatura em Celsius )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="(num1 * 1.8) + 32"/>
+            <output expression="&quot;A Temperatura Em Fahrenheit &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="diasparahoras" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Quantidade de Dias )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="num1 * 24"/>
+            <output expression="&quot;A Quantidade De Horas &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="dividir" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 / num2"/>
+            <output expression="&quot;Resultado Da Divis&#227;o: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="fparac" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Temperatura em Fahrenheit )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="(num1 - 32) / 1.8"/>
+            <output expression="&quot;A Temperatura Em Celsius &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="imc" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Peso em KG)&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( Altura em metros )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 / (num2 ^ 2)"/>
+            <output expression="&quot;O Indice De Massa Corporal  &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="kmparam" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Dist&#226;ncia em Quil&#244;metros )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="num1 * 0.621371"/>
+            <output expression="&quot;A Dist&#226;ncia em Milhas &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="mediaAritmetica" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="(num1 + num2)/ 2"/>
+            <output expression="&quot;Resultado Da M&#233;dia Aritm&#233;tica: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="multiplicar" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 * num2"/>
+            <output expression="&quot;Resultado Da Multiplica&#231;&#227;o: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="perimetroretangulo" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( largura )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( altura )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="2 * (num1 + num2)"/>
+            <output expression="&quot;O Perimetro Do Ret&#226;ngulo &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="pitagoras" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Cateto A )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( Cateto B )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="Sqrt((num1 ^ 2) + ( num2 ^ 2))"/>
+            <output expression="&quot;O Valor da Hipotenusa &#201;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="porcentagem" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Valor Total )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( Porcentagem )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="(num1 * num2) / 100"/>
+            <output expression="&quot;Resultado Da Porcentagem: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="potenciacao" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 ^ num2"/>
+            <output expression="&quot;Resultado Da Potencia&#231;&#227;o: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="raiz" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="resultado" expression="Sqrt(num1)"/>
+            <output expression="&quot;Raiz quadrada encontrada: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="somar" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 + num2"/>
+            <output expression="&quot;Resultado Da Soma: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="subtrair" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 - num2"/>
+            <output expression="&quot;Resultado Da Subtra&#231;&#227;o: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="valordesconto" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro N&#250;mero ( Pre&#231;o Original )&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o Segundo N&#250;mero ( Porcentagem de Desconto )&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 - ( num1 * ( num2 / 100))"/>
+            <output expression="&quot;Valor Do desconto Encontrado: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
