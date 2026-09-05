@@ -23,7 +23,7 @@ O código foi estruturado de forma inteiramente **modularizada**. A lógica de c
 
 ---
 
-## ⚙️ Relação das 20 Funções Implementadas
+##  Relação das 20 Funções Implementadas
 
 ### Funções Obrigatórias:
 1. **Cálculo de IMC (Índice de Massa Corporal)** – Avalia o IMC com base no peso e na altura informados.
